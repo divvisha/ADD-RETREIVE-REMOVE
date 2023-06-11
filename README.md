@@ -16,44 +16,25 @@ To write a Java program to add , remove, retrieve an element in an Array.
 
 ## PROGRAM:
 
-import java.util.*;
-
-class Main
-
-{
-
-    public static void main(String[] args) {
-    
-        ArrayList<String> al = new ArrayList<String>();
-        
-        System.out.println("Size of ArrayList: " + al.size());
-        
-        al.add("Jawa");
-        
-        al.add("KTM");
-        
-        System.out.println("Elements of first ArrayList: " + al);
-        
-        ArrayList<String> al2 = new ArrayList<String>();
-        
-        al2.add("R15");
-        
-        al2.add("RoyalEnfiled");
-        
-        al2.addAll(al);
-        
-        System.out.println("Elements of second ArrayList: " + al2);
-        
-        al2.remove("R15");
-        
-        System.out.println("Elements of ArrayList after deletion: " + al2);
-        
-        System.out.println("Size of ArrayList: " + al2.size());
-        
-        System.out.println("The element at 2nd index is: " + al2.get(2));
-        
-    }
-    
+import java.util.*;<br>
+class Main<br>
+{<br>
+    public static void main(String[] args) {<br>
+        ArrayList<String> al = new ArrayList<String>();<br>
+        System.out.println("Size of ArrayList: " + al.size());<br>
+        al.add("Jawa");<br>
+        al.add("KTM");<br>
+        System.out.println("Elements of first ArrayList: " + al);<br>
+        ArrayList<String> al2 = new ArrayList<String>();<br>
+        al2.add("R15");<br>
+        al2.add("RoyalEnfiled");<br>
+        al2.addAll(al);<br>
+        System.out.println("Elements of second ArrayList: " + al2);<br>
+        al2.remove("R15");<br>
+        System.out.println("Elements of ArrayList after deletion: " + al2);<br>
+        System.out.println("Size of ArrayList: " + al2.size());<br>
+        System.out.println("The element at 2nd index is: " + al2.get(2));<br>
+    }<br>
 }
 
 ## OUTPUT:
